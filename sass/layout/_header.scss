@@ -1,0 +1,50 @@
+.header {
+  width: 100%;
+  height: 17.4rem;
+  text-align: center;
+
+  &__logo-box {
+    width: 100%;
+    height: 12rem;
+    border-bottom: solid 1px $grey-lines;
+    padding-bottom: 0;
+  }
+
+  &__logo {
+    margin: 2rem auto;
+    animation: moveInTop 2s;
+  }
+
+  &__nav {
+    position: relative;
+
+    width: 80rem;
+    height: 7.2rem;
+  }
+
+  &__nav li {
+    list-style: none;
+    text-transform: uppercase;
+    float: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    margin: 2.8rem 2rem 0.9rem 0;
+    text-transform: uppercase;
+
+    & a {
+      text-decoration: none;
+      color: $black;
+    }
+    & a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__nav--icons {
+    position: relative;
+    bottom: 0.3rem;
+  }
+}

@@ -1,0 +1,31 @@
+.banner {
+  max-width: 134rem;
+  height: 67.2rem;
+  background-image: url('../img/Header_image.png');
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  animation: fadeIn 3s;
+  margin-bottom: 5rem;
+
+  &__rectangle--1 {
+    width: 49.4rem;
+    height: 2.2rem;
+    background-color: $text-highlight;
+    position: absolute;
+    top: 8.6rem;
+    left: 3.9rem;
+    animation: moveInRight 4s;
+    z-index: -1;
+  }
+  &__rectangle--2 {
+    width: 36.8rem;
+    height: 2.2rem;
+    background-color: $text-highlight;
+    position: absolute;
+    bottom: 0.4rem;
+    left: 11.5rem;
+    animation: moveInLeft 4s;
+    z-index: -1;
+  }
+}
