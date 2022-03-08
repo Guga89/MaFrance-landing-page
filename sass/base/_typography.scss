@@ -44,8 +44,28 @@
 
   &--cn {
     font-weight: bold;
-    font-size: 40px;
-    line-height: 58px;
+    font-size: 4rem;
+    line-height: 5.8rem;
+    z-index: 20;
     /* identical to box height */
   }
+}
+
+.values__pics--desc {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+
+  text-align: center;
+}
+
+.heading {
+  position: relative;
+  z-index: 5;
+}
+.highlightRect {
+  @include highlightRect(16.9rem, 2.2rem, 63rem, 0);
+  z-index: -10;
 }
