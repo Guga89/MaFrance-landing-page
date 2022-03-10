@@ -49,24 +49,26 @@
   &__phone {
     margin: 5rem 0 0 0;
     width: 100%;
-    height: 58rem;
+    height: 50.3rem;
     position: relative;
+    background-color: $background;
 
     &--desc {
-      background-color: $background;
       position: absolute;
-      top: 4rem;
-      height: 50.3rem;
+      display: flex;
+      justify-content: space-evenly;
+      // top: 4rem;
+      // height: 50.3rem;
       width: 100%;
     }
     &--desc-container {
-      margin: 0 0;
+      margin: 8rem 0 20rem 8rem;
       width: 56rem;
       height: 35.3rem;
       text-align: left;
       position: relative;
-      top: 7rem;
-      left: 24rem;
+      // top: 7rem;
+      // left: 24rem;
 
       & h3 {
         font-style: normal;
@@ -102,9 +104,9 @@
     }
 
     &--img {
-      position: absolute;
-      right: 17.6rem;
-      top: -4rem;
+      margin: 0 0;
+      position: relative;
+      bottom: 5rem;
     }
   }
 }

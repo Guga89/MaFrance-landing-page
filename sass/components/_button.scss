@@ -1,12 +1,32 @@
 .btn {
-  width: 168px;
-  height: 52px;
-  background: #ffffff;
-  border: 1px solid #000000;
-  box-sizing: border-box;
+  width: 16.8rem;
+  height: 5.2rem;
+  background-color: transparent;
+  border: 1px solid $black;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    box-shadow: 3px 3px 0px $blue;
+    transform: translateY(-3px);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 1px 1px 0px $blue;
+  }
+
+  &-medium {
+    width: 11.9rem;
+    height: 3.3rem;
+    border: 1px solid $black;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+  }
 }

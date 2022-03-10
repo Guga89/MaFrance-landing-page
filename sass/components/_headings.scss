@@ -1,0 +1,10 @@
+.heading {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 5;
+}
+.highlightRect {
+  @include highlightRect(16.9rem, 2.2rem);
+  z-index: -10;
+}

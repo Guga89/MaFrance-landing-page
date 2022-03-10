@@ -72,25 +72,44 @@
       <main>
         <!-- ================BANNER section========================= -->
         <section class="banner">
+          <img
+            src="./img/Header_image@2x.png"
+            alt="banner image"
+            class="banner__img"
+          />
           <div class="banner__title">
-            <p class="banner__title--en">
-              MaFrance<span class="banner__title--cn">将法国</span>
-            </p>
-            <p class="banner__title--cn">的精华带到中国</p>
-            <div class="banner__rectangle--1"></div>
-            <div class="banner__rectangle--2"></div>
+            <div class="heading">
+              <h1 class="banner__title--en">
+                MaFrance<span class="banner__title--cn">将法国</span>
+                <div class="banner__rectangle--1"></div>
+              </h1>
+            </div>
+            <div class="heading">
+              <h1 class="banner__title--cn">
+                的精华带到中国
+
+                <div class="banner__rectangle--2"></div>
+              </h1>
+            </div>
           </div>
         </section>
 
         <!-- ===============Section ABOUT US======================== -->
         <section class="about">
+          <div class="qr-code">
+            <img
+              class="qr-code__img"
+              src="./img/qr-code@4x.png"
+              alt="qr-code"
+            />
+            <p class="qr-code__title">MaFrance商店</p>
+          </div>
           <div class="about__container">
             <div class="about__video">
-              <div class="about__video--image">
-                <button class="play-btn">
-                  <div class="triangle-icon"></div>
-                </button>
-              </div>
+              <img src="./img/video-img.png" class="about__video--image" />
+              <button class="play-btn">
+                <div class="triangle-icon"></div>
+              </button>
             </div>
             <div class="about__story">
               <h3 class="heading-secondary">Sophie Marceau</h3>
@@ -102,18 +121,20 @@
               </p>
             </div>
             <div class="about__photo">
-              <img
-                src="./img/Photosophie1.png"
-                alt="photo-1"
-                class="about__photo--1"
-              />
-              <img
-                src="./img/Photosophie2.png"
-                alt=""
-                class="about__photo--2"
-              />
-              <div class="red-rectangle"></div>
-              <div class="blue-rectangle"></div>
+              <div class="red-rectangle">
+                <img
+                  src="./img/Photosophie1.png"
+                  alt="photo-1"
+                  class="about__photo--1"
+                />
+              </div>
+              <div class="blue-rectangle">
+                <img
+                  src="./img/Photosophie2.png"
+                  alt=""
+                  class="about__photo--2"
+                />
+              </div>
             </div>
             <div class="about__photo--wide">
               <img src="./img/Photosophie3.png" alt="" />
@@ -124,8 +145,10 @@
         <!-- =============== 我们相信什么 ============================ -->
         <section class="values">
           <div class="heading">
-            <div class="highlightRect"></div>
-            <h2 class="heading-secondary--cn">我们相信什么</h2>
+            <h2 class="heading-secondary--cn">
+              我们相信什么
+              <div class="highlightRect"></div>
+            </h2>
           </div>
           <img
             src="./img/French_lines.png"
@@ -164,11 +187,6 @@
           </div>
           <div class="values__phone">
             <div class="values__phone--desc">
-              <img
-                src="./img/Mockup_store.png"
-                alt=""
-                class="values__phone--img"
-              />
               <div class="values__phone--desc-container">
                 <h3>
                   滚滚长江东逝水，浪花淘尽英雄。是非成败转头空，青山依旧在，几度夕阳红。
@@ -196,6 +214,11 @@
                   </div>
                 </div>
               </div>
+              <img
+                src="./img/Mockup_store.png"
+                alt=""
+                class="values__phone--img"
+              />
             </div>
           </div>
         </section>
@@ -223,8 +246,8 @@
           <button class="btn">See all brands</button>
         </section>
         <section class="lili">
-          <div class="lili__dashed-border"></div>
           <div class="lili__blue-bg">
+            <div class="lili__dashed-border"></div>
             <img class="lili__img" src="./img/Lili-transparent 2.png" alt="" />
             <img class="lili__qr" src="./img/Lili_QR.png" alt="" />
             <div class="lili__about">
@@ -252,7 +275,196 @@
             </div>
           </div>
         </section>
+        <section class="news">
+          <div class="heading">
+            <div class="highlightRect"></div>
+            <h2 class="heading-secondary--cn">消息</h2>
+          </div>
+          <div class="news__container">
+            <!-- ======================================== -->
+            <div class="news__card">
+              <img
+                src="./img/News1.png"
+                alt=""
+                class="news__card--img image__img"
+              />
+              <p class="news__card--date">2020-09-15</p>
+              <h3 class="news__card--title">标题</h3>
+              <button class="btn btn-medium">Read articles</button>
+            </div>
+
+            <div class="news__card">
+              <img src="./img/News2.png" alt="" class="news__card--img" />
+              <p class="news__card--date">2020-09-15</p>
+              <h3 class="news__card--title">标题</h3>
+              <button class="btn btn-medium">Read articles</button>
+            </div>
+            <div class="news__card">
+              <img src="./img/News3.png" alt="" class="news__card--img" />
+              <p class="news__card--date">2020-09-15</p>
+              <h3 class="news__card--title">标题</h3>
+              <button class="btn btn-medium">Read articles</button>
+            </div>
+            <div class="news__card">
+              <img src="./img/News4.png" alt="" class="news__card--img" />
+              <p class="news__card--date">2020-09-15</p>
+              <h3 class="news__card--title">标题</h3>
+              <button class="btn btn-medium">Read articles</button>
+            </div>
+            <div class="news__card">
+              <img src="./img/News5.png" alt="" class="news__card--img" />
+              <p class="news__card--date">2020-09-15</p>
+              <h3 class="news__card--title">标题</h3>
+              <button class="btn btn-medium">Read articles</button>
+            </div>
+            <div class="news__card">
+              <h3 class="news__card--title">发现所有新闻</h3>
+              <p class="news__card--date">Actualités Ma France</p>
+              <p class="news__card--date">Actualités Partners</p>
+              <p class="news__card--date">Press</p>
+              <br />
+              <br />
+              <button class="btn btn-medium">All news</button>
+            </div>
+          </div>
+        </section>
+        <section class="contact">
+          <div class="contact__container">
+            <img
+              class="contact__container--line"
+              src="./img/bndeau-line.png"
+              alt=""
+            />
+            <div class="contact__contact-us">
+              <div class="heading">
+                <div class="highlightRect"></div>
+                <h2 class="heading-secondary--cn">联系我们</h2>
+              </div>
+              <p class="contact__contact-us--text">
+                滚滚长江东逝水，浪花淘尽英雄。是非成败转头空，青山依旧在，几度夕阳红。白发渔樵江渚上，惯看秋月春风。一壶浊酒喜相逢，古今多少事，都付笑谈中。
+              </p>
+              <img
+                src="./img/Group.png"
+                alt=""
+                class="contact__contact-us--img"
+              />
+            </div>
+            <div class="contact__form">
+              <form action="#">
+                <div class="contact__form--fullname">
+                  <input
+                    class="form-input form__fullname"
+                    type="text"
+                    placeholder="名字"
+                    required
+                  />
+                  <input
+                    class="form-input form__fullname"
+                    type="text"
+                    placeholder="姓"
+                    required
+                  />
+                </div>
+                <input
+                  class="form-input contact__form--email"
+                  type="email"
+                  placeholder="Mail*"
+                  required
+                />
+                <input
+                  class="form-input contact__form--tel"
+                  type="tel"
+                  placeholder="Phone number"
+                  required
+                />
+                <select class="form-input contact__form--select">
+                  <option value="">Customer service</option>
+                  <option value="">Press</option>
+                  <option value="">Partner</option>
+                  <option value=""></option>
+                </select>
+                <textarea
+                  class="form-input contact__form--textarea"
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="5"
+                  placeholder="Message*"
+                  required
+                ></textarea>
+                <button type="submit" class="btn">Send</button>
+              </form>
+            </div>
+          </div>
+        </section>
       </main>
+      <footer>
+        <div class="footer">
+          <div class="footer__logo-box">
+            <img
+              src="./img/Logo_long_soustitre_bleu+chinois.png"
+              alt="logo"
+              class="footer__logo"
+            />
+          </div>
+          <div id="navbar" class="footer__nav">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">品牌</a></li>
+            <li><a href="#">伙伴</a></li>
+            <li><a href="#">消息</a></li>
+            <li><a href="#">关于我们</a></li>
+            <li><a href="#">联系我们</a></li>
+          </div>
+          <div class="footer__icons">
+            <li>
+              <a href="#"
+                ><img
+                  src="./img/shopping-bag 1.png"
+                  alt="shopping bag"
+                  class="footer__nav--icons"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./img/371_Wechat_logo-512 1.png"
+                  alt="wechat"
+                  class="footer__nav--icons"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./img/weibo-555498 1.png"
+                  alt="weibo"
+                  class="footer__nav--icons"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./img/xiaohongshu 2.png"
+                  alt="shopping bag"
+                  class="footer__nav--icons"
+              /></a>
+            </li>
+          </div>
+        </div>
+        <div class="contact-info">
+          <div class="contact-info__shanghai">
+            <h2>上海地址</h2>
+            <p>香港中路38号阳光百货</p>
+          </div>
+          <div class="contact-info__hangzhou">
+            <h2>杭州地址</h2>
+            <p>香港中路38号阳光百货</p>
+          </div>
+          <div class="contact-info__paris">
+            <h2>巴黎地址</h2>
+            <p>Station F - 5, parvis Alan-Turing, Paris, France</p>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="./js/index.js"></script>
   </body>

@@ -1,0 +1,63 @@
+.news {
+  width: 100%;
+  height: auto;
+  background-color: $background;
+  padding-top: 6rem;
+  position: relative;
+
+  &__container {
+    max-width: 111rem;
+    padding: 5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__card {
+    text-align: center;
+    max-width: 35rem;
+    margin-bottom: 5rem;
+
+    &--date {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 3rem;
+      margin-top: 1rem;
+    }
+
+    &--title {
+      font-family: 'Noto Sans SC', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 3rem;
+      line-height: 41px;
+      margin-bottom: 2rem;
+    }
+
+    &--img {
+      transition: all 0.3s;
+      width: 100%;
+
+      &:hover {
+        filter: drop-shadow(6px 6px 0px #002654);
+        transform: translateY(-3px);
+      }
+
+      &:active {
+        filter: drop-shadow(1px 1px 0px #002654);
+        transform: translateY(-1px);
+        box-shadow: 1px 1px 0px $blue;
+      }
+    }
+
+    &:nth-last-child(1) {
+      padding: 3.7rem 2.5rem;
+      text-align: left;
+      width: 100%;
+      height: 30.8rem;
+      border: 1px solid $blue;
+    }
+  }
+}

@@ -1,12 +1,13 @@
 .about {
-  padding-top: 5rem;
+  padding: 5rem 5rem;
   width: 100%;
   height: 103.2rem;
   margin: 5rem auto;
   display: block;
+  position: relative;
 
   &__container {
-    width: 111.5rem;
+    max-width: 111.5rem;
     height: 93.2rem;
     display: flex;
     flex-direction: row;
@@ -16,18 +17,19 @@
 
   &__video {
     width: 50%;
-    height: 50%;
+    height: auto;
+    position: relative;
 
     &--image {
-      width: 55rem;
-      height: 34.7rem;
-      background-image: url('../../img/video-img.png');
-      background-size: cover;
-      background-position: top;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      width: 100%;
+      height: auto;
+    }
+
+    & .play-btn {
+      position: absolute;
+      left: 50%;
+      top: 40%;
+      transform: translate(-50%, -50%);
     }
   }
 
@@ -35,6 +37,7 @@
     width: 50%;
     height: 50%;
     padding-left: 8.5rem;
+    z-index: 10;
   }
 
   &__photo {
@@ -43,39 +46,48 @@
     position: relative;
     z-index: 9;
 
-    &--1 {
-      z-index: 10;
-    }
-
-    &--2 {
-      position: relative;
-      top: 20%;
-      left: -10%;
-      z-index: 20;
-    }
-
     & .red-rectangle {
       width: 14.4rem;
       height: 24.2rem;
       background-color: $red;
-      position: absolute;
+      position: relative;
       top: 34%;
       left: -1%;
       z-index: -1;
+      margin: 0 0;
     }
     & .blue-rectangle {
       width: 12.8rem;
       height: 12.1rem;
       background-color: $blue;
-      position: absolute;
-      bottom: -6%;
-      right: 19.5%;
+      position: relative;
+      bottom: -31%;
+      right: -20%;
       z-index: -1;
+    }
+
+    &--1 {
+      z-index: 10;
+      position: absolute;
+      bottom: 3%;
+      left: 5%;
+      z-index: 20;
+    }
+
+    &--2 {
+      position: absolute;
+      bottom: 6%;
+      right: 6%;
+      z-index: 20;
     }
   }
 
   &__photo--wide {
     width: 50%;
     height: 50%;
+
+    & img {
+      width: 100%;
+    }
   }
 }

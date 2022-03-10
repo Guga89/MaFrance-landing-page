@@ -16,3 +16,21 @@ function applySticky() {
     navbar.classList.remove('sticky');
   }
 }
+
+//============== Form validity check ==============================
+const inputs = document.getElementsByClassName('form-input');
+
+for (let input of inputs) {
+  // Just before submit, the invalid event will fire, let's apply our class there.
+  input.addEventListener(
+    'invalid',
+    (event) => {
+      input.classList.add('error');
+    },
+    false
+  );
+
+  input.addEventListener('blur', (event) => {
+    input.checkValidity();
+  });
+}

@@ -1,21 +1,47 @@
 .banner {
   max-width: 134rem;
-  height: 67.2rem;
-  background-image: url('../img/Header_image.png');
-  background-size: cover;
-  background-position: top;
   position: relative;
-  animation: fadeIn 3s;
-  margin-bottom: 5rem;
-  margin-top: 1rem;
+  &__img {
+    width: 100%;
+    animation: fadeIn 3s;
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+  }
 
   &__rectangle--1 {
-    @include highlightRect(49.4rem, 2.2rem, 3rem, 12.7rem);
-    animation: moveInRight 4s;
+    @include highlightRect(49.4rem, 2.2rem);
+    // animation: moveInRight 4s;
+    bottom: 1.6rem;
   }
 
   &__rectangle--2 {
-    @include highlightRect(36.8rem, 2.2rem, 11.5rem, 0.4rem);
-    animation: moveInLeft 4s;
+    @include highlightRect(36.8rem, 2.2rem);
+    // animation: moveInLeft 4s;
+    bottom: 1.6rem;
+  }
+
+  &__title {
+    position: absolute;
+    width: 57.3rem;
+    height: 23.4rem;
+    right: 5.5rem;
+    top: 12rem;
+    font-size: 5rem;
+    line-height: 12rem;
+    /* or 150% */
+
+    letter-spacing: -0.04em;
+    z-index: 4;
+
+    &--en {
+      animation: moveInLeft 2s;
+      font-weight: 300;
+      position: relative;
+    }
+    &--cn {
+      font-weight: 500;
+      animation: moveInRight 2s;
+      position: relative;
+    }
   }
 }

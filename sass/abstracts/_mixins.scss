@@ -1,9 +1,10 @@
-@mixin highlightRect($w, $h, $x, $y) {
+@mixin highlightRect($w, $h) {
   width: $w;
   height: $h;
   background-color: $text-highlight;
   position: absolute;
-  bottom: $y;
-  left: $x;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: -1;
 }
