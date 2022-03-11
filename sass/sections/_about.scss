@@ -6,6 +6,11 @@
   display: block;
   position: relative;
 
+  @include respond(phone) {
+    margin: 0 auto;
+    height: auto;
+  }
+
   &__container {
     max-width: 111.5rem;
     height: 93.2rem;
@@ -13,12 +18,20 @@
     flex-direction: row;
     justify-content: flex-end;
     flex-wrap: wrap;
+
+    @include respond(phone) {
+      height: auto;
+    }
   }
 
   &__video {
     width: 50%;
     height: auto;
     position: relative;
+
+    @include respond(phone) {
+      width: 100%;
+    }
 
     &--image {
       width: 100%;
@@ -28,16 +41,31 @@
     & .play-btn {
       position: absolute;
       left: 50%;
-      top: 40%;
+      top: 38%;
       transform: translate(-50%, -50%);
+
+      @include respond(tablet) {
+        top: 31%;
+      }
+      @include respond(phone) {
+        top: 50%;
+      }
     }
   }
 
   &__story {
     width: 50%;
-    height: 50%;
+    height: auto;
     padding-left: 8.5rem;
     z-index: 10;
+
+    @include respond(tablet) {
+      padding-left: 5.5rem;
+    }
+    @include respond(phone) {
+      padding: 5rem 0;
+      width: 100%;
+    }
   }
 
   &__photo {
@@ -45,6 +73,13 @@
     height: 50%;
     position: relative;
     z-index: 9;
+
+    @include respond(phone) {
+      width: 100%;
+      height: auto;
+      margin-top: 5rem;
+      margin-bottom: 13rem;
+    }
 
     & .red-rectangle {
       width: 14.4rem;
@@ -55,6 +90,18 @@
       left: -1%;
       z-index: -1;
       margin: 0 0;
+
+      @include respond(phone) {
+        background-color: transparent;
+        bottom: 0;
+
+        & img {
+          width: 28rem;
+          bottom: 1%;
+          left: 2%;
+          box-shadow: -6px 6px 0 $red;
+        }
+      }
     }
     & .blue-rectangle {
       width: 12.8rem;
@@ -64,6 +111,17 @@
       bottom: -31%;
       right: -20%;
       z-index: -1;
+
+      @include respond(phone) {
+        bottom: -8rem;
+        left: 17rem;
+
+        background-color: transparent;
+        & img {
+          width: 25rem;
+          box-shadow: 6px 6px 0 $blue;
+        }
+      }
     }
 
     &--1 {
@@ -87,6 +145,12 @@
     height: 50%;
 
     & img {
+      width: 100%;
+    }
+
+    @include respond(tablet) {
+    }
+    @include respond(phone) {
       width: 100%;
     }
   }

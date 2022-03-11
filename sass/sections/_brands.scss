@@ -48,6 +48,25 @@
     top: 10rem;
     right: 15rem;
   }
+  @include respond(phone) {
+    &__about {
+      height: 100%;
+      width: 100%;
+      /* margin: 0 0; */
+      position: inherit;
+      top: 0;
+      right: 0;
+      padding: 27rem 3rem 10rem;
+    }
+
+    &__blue-bg {
+      height: auto;
+    }
+
+    &__dashed-border {
+      height: 100%;
+    }
+  }
   &__about p {
     font-family: Montserrat;
     font-style: normal;
@@ -58,6 +77,13 @@
     position: absolute;
     top: 5rem;
     right: 5rem;
+
+    @include respond(phone) {
+      width: 14rem;
+      margin: 0 0;
+      top: 6rem;
+      left: 28rem;
+    }
   }
 
   &__signature {
@@ -68,5 +94,12 @@
     position: absolute;
     top: 10rem;
     left: 6rem;
+
+    @include respond(phone) {
+      width: 17rem;
+      margin: 0 0;
+      top: 2rem;
+      left: 1rem;
+    }
   }
 }

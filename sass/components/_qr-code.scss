@@ -8,6 +8,10 @@
   box-sizing: border-box;
   z-index: 1;
 
+  @include respond(tablet) {
+    display: none;
+  }
+
   & img {
     width: 100%;
     padding: 1.2rem 1.2rem 0.8rem 1.2rem;

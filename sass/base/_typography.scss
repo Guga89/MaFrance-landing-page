@@ -2,10 +2,13 @@
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
-  font-size: 40px;
-  line-height: 49px;
+  font-size: 4rem;
+  line-height: 4.9rem;
   text-align: left;
   padding-bottom: 3.2rem;
+
+  @include respond(tablet) {
+  }
 
   &--sub {
     font-weight: bold;

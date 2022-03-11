@@ -8,17 +8,31 @@
     height: 12rem;
     border-bottom: solid 1px $grey-lines;
     padding-bottom: 0;
+
+    @include respond(phone) {
+      height: auto;
+      padding: 2rem 0;
+    }
   }
 
   &__logo {
     margin: 2rem auto;
     animation: moveInTop 2s;
+
+    @include respond(phone) {
+      width: 32rem;
+      margin: 0;
+    }
   }
 
   &__nav {
     max-width: 144rem;
     position: relative;
     background-color: $white;
+
+    @include respond(phone) {
+      display: none;
+    }
 
     // margin: 0 auto;
     & ul {
@@ -65,4 +79,17 @@
   top: 0;
   z-index: 2000;
   box-shadow: 5px 5px 5px $grey-lines;
+}
+
+.burger {
+  position: absolute;
+  top: 1.8rem;
+  left: 1.8rem;
+  display: none;
+  & div {
+    width: 3rem;
+    height: 0.3rem;
+    background-color: $black;
+    margin: 5px;
+  }
 }

@@ -6,6 +6,18 @@
     animation: fadeIn 3s;
     margin-bottom: 5rem;
     margin-top: 1rem;
+
+    @include respond(tablet) {
+      padding: 0 2rem;
+    }
+  }
+
+  & .heading {
+    @include respond(phone) {
+      position: relative;
+      left: 13rem;
+      bottom: 4rem;
+    }
   }
 
   &__rectangle--1 {
@@ -42,6 +54,54 @@
       font-weight: 500;
       animation: moveInRight 2s;
       position: relative;
+    }
+
+    @include respond(tablet) {
+      font-size: 4rem;
+      line-height: 10rem;
+
+      &__rectangle--1 {
+        @include highlightRect(30rem, 1.7rem);
+        // animation: moveInRight 4s;
+        bottom: 1.6rem;
+      }
+
+      &__rectangle--2 {
+        @include highlightRect(30rem, 2.2rem);
+        // animation: moveInLeft 4s;
+        bottom: 1.6rem;
+      }
+    }
+    @include respond(phone) {
+      font-size: 3rem;
+      line-height: 6rem;
+    }
+  }
+  @include respond(tablet) {
+    &__rectangle--1 {
+      @include highlightRect(37rem, 1.7rem);
+      // animation: moveInRight 4s;
+      bottom: 1.6rem;
+    }
+
+    &__rectangle--2 {
+      @include highlightRect(32rem, 1.7rem);
+      // animation: moveInLeft 4s;
+      bottom: 1.6rem;
+    }
+  }
+
+  @include respond(phone) {
+    &__rectangle--1 {
+      @include highlightRect(27rem, 1.7rem);
+      // animation: moveInRight 4s;
+      bottom: 0.6rem;
+    }
+
+    &__rectangle--2 {
+      @include highlightRect(25rem, 1.7rem);
+      // animation: moveInLeft 4s;
+      bottom: 0.6rem;
     }
   }
 }

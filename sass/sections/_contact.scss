@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: row;
     height: 63rem;
+    overflow: hidden;
 
     background: #fafbfc;
     border: 1px solid $blue;
@@ -19,9 +20,9 @@
     &--line {
       position: absolute;
       top: 0;
-      max-width: 100%;
     }
   }
+
   &__contact-us {
     padding: 7.4rem 7.4rem;
     width: 50%;
@@ -82,8 +83,8 @@
       font-family: Montserrat;
       font-style: normal;
       font-weight: normal;
-      font-size: 16px;
-      line-height: 20px;
+      font-size: 1.6rem;
+      line-height: 2rem;
 
       & input,
       select,
@@ -129,6 +130,99 @@
 
     &--fullname {
       width: 100%;
+    }
+  }
+}
+
+@include respond(phone) {
+  .contact {
+    padding: 6rem 3rem;
+    &__container {
+      height: auto;
+      flex-direction: column;
+
+      &--line {
+        position: unset;
+        width: unset;
+      }
+    }
+
+    &__contact-us {
+      width: 100%;
+      padding: 3rem;
+      &::after {
+        position: relative;
+        margin-top: 3rem;
+        top: 1rem;
+        left: 0;
+        transform: translateX(0);
+        height: 1px;
+        width: 100%;
+      }
+    }
+
+    &__contact-us--img {
+      display: none;
+    }
+
+    &__form {
+      width: 100%;
+      height: auto;
+      padding: 3rem 3rem 7rem;
+
+      &--fullname {
+        display: block;
+      }
+    }
+
+    & .form__fullname {
+      width: 100%;
+      margin: 1rem auto;
+      height: 7rem;
+    }
+
+    & .heading {
+      text-align: center;
+      padding: 5rem 0;
+    }
+
+    & .highlightRect {
+      bottom: 4.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    & p {
+      font-size: 2.6rem;
+      line-height: 4.6rem;
+    }
+
+    & input,
+    select,
+    textarea {
+      padding: 3rem 3rem;
+      margin: 1rem auto;
+      height: 7rem !important;
+
+      &::placeholder {
+        font-size: 2rem;
+      }
+    }
+
+    & textarea {
+      padding: 3rem 3rem;
+      height: auto !important ;
+      margin-bottom: 5rem;
+      &::placeholder {
+        font-size: 2rem;
+      }
+    }
+
+    & form .btn {
+      margin: 0 auto;
+      width: 70%;
+      height: 8rem;
+      font-size: 3rem;
     }
   }
 }

@@ -5,12 +5,27 @@
   border: none;
   background-color: $white;
 
+  @include respond(tablet) {
+    top: 40%;
+  }
+  @include respond(phone) {
+    top: 50%;
+    width: 10rem;
+    height: 10rem;
+  }
+
   & .triangle-icon {
     width: 2rem;
     height: 2rem;
     clip-path: polygon(0 0, 0% 100%, 75% 50%);
     background-color: $grey-lines;
     margin-left: 2.5rem;
+
+    @include respond(phone) {
+      width: 5rem;
+      height: 5rem;
+      margin-left: 3.5rem;
+    }
   }
   &:hover {
     background-color: darken($grey-lines, 15%);

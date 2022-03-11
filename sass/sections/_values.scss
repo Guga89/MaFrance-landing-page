@@ -9,6 +9,11 @@
     display: flex;
     width: 89%;
     top: 16rem;
+    flex-wrap: wrap;
+
+    @include respond(phone) {
+      width: 100%;
+    }
 
     &--french-lines {
       width: 100%;
@@ -27,6 +32,31 @@
       height: 37.8rem;
       justify-content: space-between;
       z-index: 20;
+
+      @include respond(phone) {
+        width: 46%;
+        height: auto;
+        padding: 4rem 0;
+
+        & img {
+          width: 100%;
+        }
+
+        & hr {
+          width: 8rem;
+          margin: 3rem auto;
+          background-color: #002654;
+          border: 1px solid #002654;
+        }
+
+        & p {
+          font-family: Montserrat;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 22px;
+          text-align: center;
+        }
+      }
 
       &:nth-child(2n) {
         bottom: 4rem;
@@ -53,13 +83,22 @@
     position: relative;
     background-color: $background;
 
+    @include respond(phone) {
+      height: auto;
+    }
+
     &--desc {
       position: absolute;
       display: flex;
       justify-content: space-evenly;
-      // top: 4rem;
-      // height: 50.3rem;
       width: 100%;
+    }
+    @include respond(phone) {
+      &--desc {
+        display: block;
+        position: inherit;
+        padding: 5rem 2.5rem;
+      }
     }
     &--desc-container {
       margin: 8rem 0 20rem 8rem;
@@ -67,21 +106,24 @@
       height: 35.3rem;
       text-align: left;
       position: relative;
-      // top: 7rem;
-      // left: 24rem;
+
+      @include respond(phone) {
+        width: 100%;
+        margin: 0 0;
+      }
 
       & h3 {
         font-style: normal;
         font-weight: normal;
-        font-size: 24px;
-        line-height: 35px;
+        font-size: 2.4rem;
+        line-height: 3.5rem;
       }
 
       & p {
         font-style: normal;
         font-weight: 300;
-        font-size: 18px;
-        line-height: 28px;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
         margin-inline-start: 0;
       }
 
@@ -95,6 +137,10 @@
       flex-direction: row;
       margin: 0 0;
 
+      @include respond(phone) {
+        width: 100%;
+      }
+
       & div {
         display: flex;
         text-align: left;
@@ -107,6 +153,11 @@
       margin: 0 0;
       position: relative;
       bottom: 5rem;
+
+      @include respond(phone) {
+        position: relative;
+        top: 10rem;
+      }
     }
   }
 }
